@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="position-absolute">
+    <img width="100%" src="{{ url_for('static', filename='assets/images/banner-baru2.png') }}"
+      class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+  </div>
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img style="max-width: 35%" class="ps-5" src="{{ url_for('static', filename='assets/images/logo-fif.png') }}"
+          alt="logo...">
+      </a>
+      <div class="d-flex">
+        <ul class="nav pe-5">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section m-5 position-relative" id="about">
+    <div class="welcome-area" id="welcome">
+      <div class="header-text">
+        <div class="container">
+          <div class="row">
+            <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12"
+              data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+              <h1>Website Inovasi</h1>
+              <h2 class="text-white">Fakultas Informatika</h2>
+              <hr>
+              <p>Selamat datang di Website Inovasi Fakultas Informatika. Silahkan scroll untuk melanjutkan!</p>
+              <a href="#about" class="main-button-slider">About</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+              data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+              <img src="{{ url_for('static', filename='assets/images/spaceship-1.png') }}"
+                class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section m-5 position-relative" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-12 col-sm-12">
+          <img src="{{ url_for('static', filename='assets/images/left-image.png') }}"
+            class="rounded img-fluid d-block mx-auto" alt="App">
+        </div>
+        <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+          <div class="left-heading">
+            <h5>Apa itu website Inovasi?</h5>
+          </div>
+          <div class="left-text">
+            <p>Website Inovasi di Fakultas Informatika berfungsi sebagai platform untuk mengumpulkan dan menampilkan
+              berbagai proyek inovatif dari para mahasiswa, dosen maupun staf akademik. Tujuan utama dari website ini
+              adalah untuk mempromosikan, dan menginspirasi semangat inovasi di kalangan anggota akademik,
+              serta ikut terlibat dalam perjalanan penemuan ilmiah yang menarik. <br><br>Melalui cerita
+              dan laporan proyek inovatif, website ini berfungsi sebagai sarana yang mendukung
+              pertumbuhan kreativitas civitas Fakultas Informatika</p>
+            <!-- <a href="#about2" class="main-button">Discover More</a> -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="hr"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

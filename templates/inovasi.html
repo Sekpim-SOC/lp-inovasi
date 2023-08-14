@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="section-heading">
+        <h2>Daftar Inovasi</h2>
+      </div>
+    </div>
+    <div class="offset-lg-3 col-lg-6">
+      <div class="section-heading mb-5">
+        <p>Daftar Inovasi di Fakultas Informatika</p>
+      </div>
+    </div>
+  </div>
+
+  {% for idx in index %}
+
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <article class="accordions" id="accord{{ idx }}">
+        <div class="accordion-head">
+          <h1 class="mb-0">
+            <span class="btn btn-block text-left btn-lg m-0 p-0" type="button" data-toggle="collapse"
+              data-target="#collaps{{ idx }}" aria-expanded="true" aria-controls="collaps{{ idx }}">
+              <span>{{ data["jenis-inovasi"][idx] }} - {{ data["judul"][idx]}}</span>
+            </span>
+          </h1>
+
+          <div id="collaps{{ idx }}" class="collapse {% if idx == 0 %} show {% endif %}" aria-labelledby="headingOne"
+            data-parent="#accord{{ idx }}">
+            <div class="card-body">
+              <div class="content">
+                <p>Deskripsi</p>
+                <p>{{ data["deskripsi"][idx] }}</p><br>
+                <p>Pengembang: {{ data["pengembang"][idx] }} </p><br>
+                <p>Demo</p>
+                <p>Url: <a href="{{ data['link'][idx] }}">{{ data["link"][idx] }}</a> or scan me </p><br>
+                <!-- <p>
+                  <img width="20%" src="{{ url_for('static', filename='assets/images/qr-infofif.png') }}" alt="">
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  {% endfor %}
+
+</div>
+{% endblock %}

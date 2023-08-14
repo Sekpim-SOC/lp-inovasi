@@ -137,60 +137,7 @@
 
   <div id="inovasi"></div>
   <section class="section m-5" id="inovasi">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h2>Daftar Inovasi</h2>
-          </div>
-        </div>
-        <div class="offset-lg-3 col-lg-6">
-          <div class="section-heading mb-5">
-            <p>Daftar Inovasi di Fakultas Informatika</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
-          <article class="accordions" id="accord1">
-            <div class="accordion-head">
-              <h1 class="mb-0">
-                <span class="btn btn-block text-left btn-lg m-0 p-0" type="button" data-toggle="collapse"
-                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <span>FIF TelU Bot</span>
-                </span>
-              </h1>
-
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accord1">
-                <div class="card-body">
-                  <div class="content">
-                    <p>Deskripsi</p>
-                    <p>Telegram bot Info FIF memiliki dua fungsi utama, yaitu menampilkan informasi dosen dan informasi
-                      terkait MBKM. Pengguna dapat berinteraksi dengan bot ini dengan mengirimkan perintah khusus
-                      melalui
-                      pesan teks, dan bot akan memberikan respons dengan informasi yang relevan tentang dosen yang
-                      mereka
-                      cari atau informasi MBKM. Dengan Telegram bot ini, kami dapat memberikan kemudahan akses informasi
-                      kepada seluruh anggota Fakultas dan mahasiswa, menjadikan komunikasi dan akses informasi lebih
-                      efisien dan cepat.</p><br>
-                    <!-- <p>Github: <a href="#">{link github}</a></p><br> -->
-                    <p>Pengembang: Fakultas Informatika 🔥 </p><br>
-                    <p>Demo</p>
-                    <p>Url: <a href="https://t.me/fif_telu_bot">t.me/fif_telu_bot</a> or scan me </p><br>
-                    <p>
-                      <img width="20%" src="{{ url_for('static', filename='assets/images/qr-infofif.png') }}" alt="">
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </div>
+    {% block content %}{% endblock %}
   </section>
 
   <footer>
